@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+:root {
+  /*Colors primary*/
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  /*Colors Neutral*/
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  /*Fonts Family*/
+  --font-family-Fraunce: "Fraunce", serif;
+  --font-family-monserrat: "Montserrat", sans-serif;
+  --font-family-oleo: "Oleo Script Swash Caps", cursive;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: var(--font-family-monserrat);
+  font-size: 14px;
+  padding: 1rem;
+}
+
+.main {
+  display: flex;
+  width: 65vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  background-color: var(--Cream);
+}
+
+.target {
+  position: relative;
+  width: 555px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  background-color: var(--White);
+  border-radius: 0.5rem;
+}
+
+.target__image {
+  height: 400px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 6;
+}
+
+.target__image-img {
+  width: 100%;
+  height: 100%;
+  /* border-image: url(/images/image-product-desktop.jpg); */
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.info {
+  position: relative;
+  padding-left: 1.5rem;
+  grid-column: 2 / 3;
+  grid-row: 1 / 6;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.info__perfume {
+  position: relative;
+  width: 150px;
+  color: var(--Dark-grayish-blue);
+  opacity: 0.5;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+}
+
+.info__title {
+  width: 175px;
+  margin-bottom: 1.2rem;
+  font-family: var(--font-family-Fraunce);
+  line-height: 1.5rem;
+}
+.info__description {
+  width: 220px;
+  font-size: 14px;
+  line-height: 1.6em;
+  font-weight: 6;
+  margin-bottom: 1rem;
+  color: var(--Dark-grayish-blue);
+  opacity: 0.9;
+}
+.info__precio {
+  display: flex;
+  width: 200px;
+  margin-left: 1em;
+  align-items: center;
+  font-family: var(--font-family-monserrat);
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.info__precio-price {
+  margin-left: 0.3em;
+  margin-right: 0.5em;
+  font-size: 1.8em;
+  font-weight: 500;
+  font-family: var(--font-family-oleo);
+  color: var(--Dark-cyan);
+}
+
+.info__precio-ofert {
+  text-decoration: line-through;
+}
+
+.info__precio-add {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+  padding: 0.5rem 0;
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  border-radius: 0.5em;
+}
+.add__cart {
+  margin-right:1rem;
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
